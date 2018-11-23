@@ -4,13 +4,13 @@
 #
 Name     : perl-namespace-autoclean
 Version  : 0.28
-Release  : 9
+Release  : 10
 URL      : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
 Summary  : 'Keep imports out of your namespace'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
-Requires: perl-namespace-autoclean-data = %{version}-%{release}
+Requires: perl-namespace-autoclean-license = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(B::Hooks::EndOfScope)
 BuildRequires : perl(Module::Implementation)
@@ -28,22 +28,21 @@ This archive contains the distribution namespace-autoclean,
 version 0.28:
 Keep imports out of your namespace
 
-%package data
-Summary: data components for the perl-namespace-autoclean package.
-Group: Data
-
-%description data
-data components for the perl-namespace-autoclean package.
-
-
 %package dev
 Summary: dev components for the perl-namespace-autoclean package.
 Group: Development
-Requires: perl-namespace-autoclean-data = %{version}-%{release}
 Provides: perl-namespace-autoclean-devel = %{version}-%{release}
 
 %description dev
 dev components for the perl-namespace-autoclean package.
+
+
+%package license
+Summary: license components for the perl-namespace-autoclean package.
+Group: Default
+
+%description license
+license components for the perl-namespace-autoclean package.
 
 
 %prep
@@ -87,10 +86,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(-,root,root,-)
 /usr/lib/perl5/vendor_perl/5.28.0/namespace/autoclean.pm
 
-%files data
-%defattr(-,root,root,-)
-/usr/share/package-licenses/perl-namespace-autoclean/LICENCE
-
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/namespace::autoclean.3
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-namespace-autoclean/LICENCE
