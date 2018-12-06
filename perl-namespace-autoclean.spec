@@ -21,7 +21,6 @@ BuildRequires : perl(Sub::Identify)
 BuildRequires : perl(Test::Requires)
 BuildRequires : perl(Try::Tiny)
 BuildRequires : perl(Variable::Magic)
-BuildRequires : perl(namespace::clean)
 
 %description
 This archive contains the distribution namespace-autoclean,
