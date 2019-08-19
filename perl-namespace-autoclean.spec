@@ -4,13 +4,14 @@
 #
 Name     : perl-namespace-autoclean
 Version  : 0.28
-Release  : 19
+Release  : 20
 URL      : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
-Summary  : Keep imports out of your namespace
+Summary  : 'Keep imports out of your namespace'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-namespace-autoclean-license = %{version}-%{release}
+Requires: perl(B::Hooks::EndOfScope)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(B::Hooks::EndOfScope)
 BuildRequires : perl(Module::Implementation)
@@ -53,7 +54,7 @@ license components for the perl-namespace-autoclean package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -63,7 +64,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
