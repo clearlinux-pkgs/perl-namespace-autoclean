@@ -4,7 +4,7 @@
 #
 Name     : perl-namespace-autoclean
 Version  : 0.28
-Release  : 20
+Release  : 21
 URL      : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/namespace-autoclean-0.28.tar.gz
 Summary  : 'Keep imports out of your namespace'
@@ -12,6 +12,15 @@ Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-namespace-autoclean-license = %{version}-%{release}
 Requires: perl(B::Hooks::EndOfScope)
+Requires: perl(Module::Implementation)
+Requires: perl(Module::Runtime)
+Requires: perl(Package::Stash)
+Requires: perl(Sub::Exporter::Progressive)
+Requires: perl(Sub::Identify)
+Requires: perl(Test::Requires)
+Requires: perl(Try::Tiny)
+Requires: perl(Variable::Magic)
+Requires: perl(namespace::clean)
 BuildRequires : buildreq-cpan
 BuildRequires : perl(B::Hooks::EndOfScope)
 BuildRequires : perl(Module::Implementation)
