@@ -4,7 +4,7 @@
 #
 Name     : perl-namespace-autoclean
 Version  : 0.29
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.29.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.29.tar.gz
 Summary  : 'Keep imports out of your namespace'
@@ -118,4 +118,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/namespace/autoclean.pm
+/usr/lib/perl5/vendor_perl/5.34.0/namespace/autoclean.pm
