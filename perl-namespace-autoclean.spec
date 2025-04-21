@@ -7,7 +7,7 @@
 #
 Name     : perl-namespace-autoclean
 Version  : 0.31
-Release  : 36
+Release  : 37
 URL      : https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.31.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/E/ET/ETHER/namespace-autoclean-0.31.tar.gz
 Summary  : 'Keep imports out of your namespace'
